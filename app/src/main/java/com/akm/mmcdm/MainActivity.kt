@@ -50,14 +50,6 @@ class MainActivity : AppCompatActivity() {
 
                 return false
             }
-
-            override fun onReceivedSslError(
-                view: WebView?,
-                handler: SslErrorHandler?,
-                error: SslError?
-            ) {
-                handler?.proceed()
-            }
         }
 
         webView.loadUrl(cdm_host_url)
