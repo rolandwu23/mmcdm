@@ -38,11 +38,11 @@ class MainActivity : AppCompatActivity() {
                 request: WebResourceRequest?
             ): Boolean {
                 val uri = request?.url
-                val facebook_url = Util.getFacebookUrl(this@MainActivity,uri.toString())
+                val facebookUrl = Util.getFacebookUrl(this@MainActivity,uri.toString())
                 if(uri?.host.equals(facebookHostUrl)){
                     val intent = Intent(
                         Intent.ACTION_VIEW,
-                        Uri.parse(facebook_url)
+                        Uri.parse(facebookUrl)
                     )
                     startActivity(intent)
                     return true
