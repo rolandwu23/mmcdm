@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">MM CDM</string>
+    <string name="app_name">SpringRevoZ</string>
+    <string name="error_message_invalid_ssl_cert">Sorry. The SSL certificate of the site is invalid</string>
+    <string name="error_message_date_invalid_ssl_cert">Sorry. The SSL certificate of the site is date invalid</string>
+    <string name="error_message_not_yet_valid_ssl_cert">Sorry. The SSL certificate of the site is not yet valid</string>
+    <string name="error_message_expired_ssl_cert">Sorry. The SSL certificate of the site is expired</string>
+    <string name="error_message_id_mismatch_ssl_cert">Sorry. The SSL certificate of the site is id mismatch</string>
+    <string name="error_message_untrusted_ssl_cert">Sorry. The SSL certificate of the site is untrusted</string>
+    <string name="positive_btn">Continue</string>
+    <string name="negative_btn">Cancel</string>
 </resources>
