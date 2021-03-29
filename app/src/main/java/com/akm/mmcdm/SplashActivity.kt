@@ -18,7 +18,7 @@ class SplashActivity : AppCompatActivity(), WebViewListener {
         val handler = Handler(Looper.getMainLooper())
         handler.post{
 //            PreCache.getInstance(baseContext,this).cacheUrl(MainActivity.cdm_host_url)
-            CacheManager.getInstance(baseContext,this).cacheUrl(MainActivity.cdm_host_url)
+            CacheManager.getInstance(baseContext,this).cacheUrl(BuildConfig.SERVER_URL)
         }
     }
 

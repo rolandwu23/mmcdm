@@ -10,6 +10,7 @@ import android.util.Log
 import android.webkit.*
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.os.BuildCompat
 import kotlinx.android.synthetic.main.activity_main.*
 import java.io.BufferedInputStream
 import java.io.IOException
@@ -22,11 +23,6 @@ import java.util.*
 
 
 class MainActivity : AppCompatActivity() {
-
-
-    companion object {
-        const val cdm_host_url = "https://mmcdm.info/"
-    }
 
     private val facebookHostUrl = "www.facebook.com"
 
@@ -119,7 +115,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        webView.loadUrl(cdm_host_url)
+        webView.loadUrl(BuildConfig.SERVER_URL)
 
     }
 

@@ -7,7 +7,7 @@ android {
     buildToolsVersion "29.0.3"
 
     defaultConfig {
-        applicationId "com.akm.mmcdm"
+        applicationId "com.akm"
         minSdkVersion 23
         targetSdkVersion 29
         versionCode 5
@@ -20,6 +20,21 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    flavorDimensions "version"
+
+    productFlavors{
+        mmcdm {
+            dimension "version"
+            applicationIdSuffix ".mmcdm"
+            buildConfigField "String", "SERVER_URL",'"https://mmcdm.info/"'
+        }
+        banktpmm {
+            dimension "version"
+            applicationIdSuffix ".banktpmm"
+            buildConfigField "String", "SERVER_URL",'"https://banktpmm.com/"'
         }
     }
 
